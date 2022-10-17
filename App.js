@@ -4,10 +4,7 @@ export default function App() {
   return (
     <View style={styles.appContainer}>
       <View style={styles.inputContainer}>
-        <TextInput
-          style={styles.inputContainer.textInput}
-          placeholder='Your Goal'
-        />
+        <TextInput style={styles.textInput} placeholder='Your Goal' />
         <Button title='Add Goal' />
       </View>
       <View style={styles.goalsContainer}>
@@ -30,15 +27,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 24,
     borderBottomWidth: 1,
-    borderBottomColor: '#ccc',
-
-    textInput: {
-      borderWidth: 1,
-      borderColor: '#ccc',
-      width: '70%',
-      marginRight: 8,
-      padding: 8
-    }
+    borderBottomColor: '#ccc'
+  },
+  textInput: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    width: '70%',
+    marginRight: 8,
+    padding: 8
   },
   goalsContainer: {
     flex: 5
