@@ -30,16 +30,17 @@ function GoalInput({ onAddGoal, onCancel, visible }) {
         <TextInput
           style={styles.textInput}
           placeholder='Your Goal'
+          placeholderTextColor='#f9f9fa50'
           onChangeText={goalInputHandler}
           value={goalText}
         />
         <View style={styles.buttonContainer}>
           <View style={styles.button}>
-            <Button color='#4AE1FF' title='Add Goal' onPress={addGoalHandler} />
+            <Button color='#6360BF' title='Add Goal' onPress={addGoalHandler} />
           </View>
 
           <View style={styles.button}>
-            <Button color='#3F80EB' title='Cancel' onPress={onCancel} />
+            <Button color='#A68A56' title='Cancel' onPress={onCancel} />
           </View>
         </View>
       </View>
@@ -58,14 +59,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
-    backgroundColor: '#9A34EB'
+    backgroundColor: '#363853'
   },
   textInput: {
     borderWidth: 1,
     borderRadius: 6,
-    borderColor: '#FF3DF4',
-    backgroundColor: '#FF3DF4',
-    color: '#3C29FF',
+    borderColor: '#262840',
+    backgroundColor: '#262840',
+    color: '#f9f9fa',
     width: '100%',
     padding: 16
   },
