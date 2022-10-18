@@ -30,7 +30,7 @@ export default function App() {
 
   return (
     <View style={styles.appContainer}>
-      <Button title='Add Goal' color='#3A238C' onPress={showModalHandler} />
+      <Button title='Add Goal' color='#9A34EB' onPress={showModalHandler} />
       <GoalInput
         onAddGoal={addGoalHandler}
         onCancel={closeModalHandler}
